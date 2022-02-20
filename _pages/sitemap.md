@@ -1,7 +1,7 @@
 ---
 layout: archive
 title: "Sitemap"
-permalink: /sitemap/
+permalink: /aboutme/sitemap/
 author_profile: true
 ---
 
