@@ -2,7 +2,7 @@
 title: "Agent-Based Simulation Modeling for Covid-19 Vaccination Policies: Single-Dose and Double-Dose Applications"
 category: publications
 permalink: /publications/2021_07_07_Agent-Based_Simulation_Modeling_for_Covid-19_Vaccination_Policies_Single-Dose_and_Double-Dose_Applications/
-excerpt: "In this study, the goal is to compare double and single-dose vaccination policies. What-if analyses for various vaccine efficacies and age group prioritization strategies are conducted. Interpretations for scenarios such as different population demographics and vaccine availability are explored using agentbased modeling and simulation."
+excerpt: 'In this study, the goal is to compare double and single-dose vaccination policies. What-if analyses for various vaccine efficacies and age group prioritization strategies are conducted. Interpretations for scenarios such as different population demographics and vaccine availability are explored using agentbased modeling and simulation.'
 venue: "40. Yöneylem Araştırması ve Endüstri Mühendisliği Kongresi"
 date: 2021-07-07
 ---
