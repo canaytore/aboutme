@@ -11,9 +11,8 @@ redirect_from:
 
 Education
 ======
-* B.S. in GitHub, GitHub University, 2012
-* M.S. in Jekyll, GitHub University, 2014
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
+* B.Sc. in Industrial Engineering and Economics, [Istanbul Technical University](https://www.itu.edu.tr/), 2019
+* M.S. in Operations Research, [Boğaziçi University](https://www.boun.edu.tr/), 2021
 
 Work experience
 ======
