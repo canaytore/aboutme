@@ -8,28 +8,14 @@ redirect_from:
   - /about.html
 ---
 
-# About Me
 I completed my bachelor’s degree in Industrial Engineering and Economics at [Istanbul Technical University](https://www.itu.edu.tr/), and my master's degree in Operations Research at [Boğaziçi University](https://www.boun.edu.tr/).
 
-My research lies at the intersection of machine learning and causal inference called _counterfactual learning_. I am interested in the counterfactual nature of logged bandit feedback and human behavior data obtained from interactive systems, and ways of using biased real-world datasets to assist safe and better decision making in the wild.
 
 # Research Interests
-- Counterfactual Learning and Evaluation
-    - Off-Policy Evaluation (Bandit / Reinforcement Learning)
-    - Heterogeneous Treatment Effect Prediction
-    - Offline Recommender Learning and Evaluation
-- Learning from Human Behavior Data
-- Statistical Machine Learning
-- Fairness in Ranking / Fair Machine Learning
+
 
 # Education
-- **Cornell University** (2021-2026)
-  - Ph.D. Student in the [Department of Computer Science](https://www.cs.cornell.edu/)
-  - Research Topics: Counterfactual Learning, Learning from Human Behavior Data
 
-- **Tokyo Institute of Technology** (2016-2021)
-  - B.Eng. in Industrial Engineering and Economics
-  - Research Topics: Counterfactual Learning, Causal Inference, Recommender Systems
 
 
 
