@@ -2,7 +2,7 @@
 title: "Fuzzy Evaluation of a New Search Engine Project to Fundraise NGOs"
 category: publications
 permalink: /publications/2019_07_23_Fuzzy_Evaluation_of_a_New_Search_Engine_Project_to_Fundraise_NGOs/
-excerpt: "Non-governmental organizations (NGOs) mostly use donations to fundraise their projects. In general, to increase the donations there is a need for a platform that brings the donators, members and NGOs together. In this paper, a new search engine project is proposed that uses the advertising incomes through user searches to fundraise several NGOs."
+excerpt: 'Non-governmental organizations (NGOs) mostly use donations to fundraise their projects. In general, to increase the donations there is a need for a platform that brings the donators, members and NGOs together. In this paper, a new search engine project is proposed that uses the advertising incomes through user searches to fundraise several NGOs.'
 venue: "International Conference on Intelligent and Fuzzy Systems"
 date: 2019-07-23
 ---
