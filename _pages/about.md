@@ -8,7 +8,31 @@ redirect_from:
   - /about.html
 ---
 
-This is the front page of a website that is powered by the [academicpages template](https://github.com/academicpages/academicpages.github.io) and hosted on GitHub pages. [GitHub pages](https://pages.github.com) is a free service in which websites are built and hosted from code and data stored in a GitHub repository, automatically updating when a new commit is made to the respository. This template was forked from the [Minimal Mistakes Jekyll Theme](https://mmistakes.github.io/minimal-mistakes/) created by Michael Rose, and then extended to support the kinds of content that academics have: publications, talks, teaching, a portfolio, blog posts, and a dynamically-generated CV. You can fork [this repository](https://github.com/academicpages/academicpages.github.io) right now, modify the configuration and markdown files, add your own PDFs and other content, and have your own site for free, with no ads! An older version of this template powers my own personal website at [stuartgeiger.com](http://stuartgeiger.com), which uses [this Github repository](https://github.com/staeiou/staeiou.github.io).
+# About Me
+I completed my bachelor’s degree in Industrial Engineering and Economics at [Istanbul Technical University](https://www.itu.edu.tr/), and my master's degree in Operations Research at [Boğaziçi University](https://www.boun.edu.tr/).
+
+My research lies at the intersection of machine learning and causal inference called _counterfactual learning_. I am interested in the counterfactual nature of logged bandit feedback and human behavior data obtained from interactive systems, and ways of using biased real-world datasets to assist safe and better decision making in the wild.
+
+# Research Interests
+- Counterfactual Learning and Evaluation
+    - Off-Policy Evaluation (Bandit / Reinforcement Learning)
+    - Heterogeneous Treatment Effect Prediction
+    - Offline Recommender Learning and Evaluation
+- Learning from Human Behavior Data
+- Statistical Machine Learning
+- Fairness in Ranking / Fair Machine Learning
+
+# Education
+- **Cornell University** (2021-2026)
+  - Ph.D. Student in the [Department of Computer Science](https://www.cs.cornell.edu/)
+  - Research Topics: Counterfactual Learning, Learning from Human Behavior Data
+
+- **Tokyo Institute of Technology** (2016-2021)
+  - B.Eng. in Industrial Engineering and Economics
+  - Research Topics: Counterfactual Learning, Causal Inference, Recommender Systems
+
+
+
 
 A data-driven personal website
 ======
