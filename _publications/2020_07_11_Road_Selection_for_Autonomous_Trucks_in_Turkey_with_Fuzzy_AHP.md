@@ -2,7 +2,7 @@
 title: "Road Selection for Autonomous Trucks in Turkey with Fuzzy AHP"
 category: publications
 permalink: /publications/2020_07_11_Road_Selection_for_Autonomous_Trucks_in_Turkey_with_Fuzzy_AHP/
-excerpt: "A smart city is an urban area that uses data collected from citizens, devices, and assets to manage resources efficiently. It can be argued that autonomous cars will spread related to this concept. However, the implementation and adaptation of the autonomous cars is a complex process due to human factors and traffic. Therefore, it is expected that autonomous vehicle (AV) will find its place first in the heavy transportation as it is more cost efficient and easier to adapt."
+excerpt: 'A smart city is an urban area that uses data collected from citizens, devices, and assets to manage resources efficiently. It can be argued that autonomous cars will spread related to this concept. However, the implementation and adaptation of the autonomous cars is a complex process due to human factors and traffic. Therefore, it is expected that autonomous vehicle (AV) will find its place first in the heavy transportation as it is more cost efficient and easier to adapt.'
 venue: "International Conference on Intelligent and Fuzzy Systems"
 date: 2020/07/11
 ---
