@@ -14,6 +14,7 @@ baseurl                  : "/aboutme" # the subpath of your site, e.g. "/blog"
 repository               : "canaytore.github.io"
 teaser                   :  # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
 breadcrumbs              : false # true, false (default)
+seo_description          : "Site for Can Aytöre, Industrial Engineer"
 words_per_minute         : 160
 future                   : true
 read_more                : "disabled" # if enabled, adds "Read more" links to excerpts
@@ -258,18 +259,18 @@ timezone: Europe/Berlin # http://en.wikipedia.org/wiki/List_of_tz_database_time_
 
 # Plugins
 plugins:
-  #- jekyll-paginate
-  #- jekyll-sitemap
-  #- jekyll-gist
-  #- jekyll-feed
-  #- jekyll-redirect-from
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-gist
+  - jekyll-feed
+  - jekyll-redirect-from
 # mimic GitHub Pages with --safe
 whitelist:
-  #- jekyll-paginate
-  #- jekyll-sitemap
-  #- jekyll-gist
-  #- jekyll-feed
-  #- jemoji
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-gist
+  - jekyll-feed
+  - jemoji
 
 
 # Archives
