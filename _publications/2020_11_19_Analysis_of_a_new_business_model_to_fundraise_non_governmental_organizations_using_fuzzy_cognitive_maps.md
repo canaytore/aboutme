@@ -1,7 +1,7 @@
 ---
 title: "Analysis of a New Business Model to Fundraise Non-Governmental Organizations Using Fuzzy Cognitive Maps"
 category: publications
-permalink: /publications/Analysis_of_a_new_business_model_to_fundraise_non_governmental_organizations_using_fuzzy_cognitive_maps/
+permalink: /publications/2020_11_19_Analysis_of_a_new_business_model_to_fundraise_non_governmental_organizations_using_fuzzy_cognitive_maps/
 excerpt: "Non-governmental organizations (NGOs) mostly use donations to fundraise their projects. In general, to increase the donations there is a need for a platform that brings the donators, members and NGOs together. In this paper, a new search engine project is proposed that uses the advertising incomes through user searches to fundraise several NGOs."
 venue: "Journal of Intelligent & Fuzzy Systems"
 date: 2020-11-19
