@@ -5,9 +5,9 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : "<Can />"
+title                    : "Can Aytö"
 title_separator          : "-"
-name                     : &name "Can Aytöre"
+name                     : &name "Can aAytöre"
 description              : &description "Industrial Engineer, M.Sc."
 url                      : https://canaytore.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "/aboutme" # the subpath of your site, e.g. "/blog"
