@@ -5,7 +5,7 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Can Aytöre"
+title                    : "<Can />"
 title_separator          : "-"
 name                     : &name "Can Aytöre"
 description              : &description "Industrial Engineer, M.Sc."
