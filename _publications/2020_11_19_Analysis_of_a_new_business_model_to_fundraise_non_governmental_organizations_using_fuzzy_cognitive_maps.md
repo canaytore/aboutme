@@ -2,7 +2,7 @@
 title: "Analysis of a New Business Model to Fundraise Non-Governmental Organizations Using Fuzzy Cognitive Maps"
 category: publications
 permalink: /publications/2020_11_19_Analysis_of_a_new_business_model_to_fundraise_non_governmental_organizations_using_fuzzy_cognitive_maps/
-excerpt: "Fundraising is one of the most critical issues for non-governmental organizations (NGOs) to carry out their projects. In this paper, a search engine project which aims to find additional financial sources and increase donations for NGOs is proposed. The proposed search engine project is analyzed using fuzzy cognitive maps (FCMs) to define and manage factor influences on the success of the project."
+excerpt: 'Fundraising is one of the most critical issues for non-governmental organizations (NGOs) to carry out their projects. In this paper, a search engine project which aims to find additional financial sources and increase donations for NGOs is proposed. The proposed search engine project is analyzed using fuzzy cognitive maps (FCMs) to define and manage factor influences on the success of the project.'
 venue: "Journal of Intelligent & Fuzzy Systems"
 date: 2020-11-19
 ---
