@@ -1,14 +1,14 @@
 ---
-title: 'Geographic distance'
-date: 2022-02-18
+title: "Geographic distance"
+date: '2022-02-18'
 permalink: /posts/2022/02/geographic-distance/
 tags:
-  - r
-  - spatial analysis
-  - visualization
+- r
+- spatial analysis
+- visualization
 ---
 
-
+hello
 
 ```{r message=FALSE, warning=FALSE}
 # load packages
