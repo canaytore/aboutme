@@ -12,7 +12,6 @@ hello
 
 ```{r message=FALSE, warning=FALSE}
 # load packages
-library(maps)
 library(sf) 
 library(tidyverse)
 library(units)
@@ -86,5 +85,58 @@ ggplot(turkey) +
 ```{r message=FALSE, warning=FALSE}
 cities[cities$distance_city == min(cities$distance_city),]
 cities[cities$distance_city == max(cities$distance_city),]
+```
+
+
+# min distance to next capital in World
+
+```{r message=FALSE, warning=FALSE}
+cities <- st_as_sf(world.cities, coords = c("long", "lat"), crs = 4326)
+cities
+
+# filter the capital cities
+capitals <- filter(cities, capital == 1)
+
+# create a new label combining name and country
+capitals <- mutate(capitals, city_country = str_c(name, " (", country.etc, ")"))
+
+capitals 
+
+# calculate distance
+m_distance <- st_distance(capitals)
+
+# matrix
+dim(m_distance)
+
+# change m to km
+m_distance_km <- set_units(m_distance, km)
+
+# replace the distance of 0 m with NA
+m_distance_km[m_distance_km == set_units(0, km)] <- NA
+
+# get the index (position) of the city and the distance
+pos <- apply(m_distance_km, 1, which.min)
+dist <- apply(m_distance_km, 1, min, na.rm = TRUE)
+
+# add the distance and get the name of the city
+capitals <- mutate(capitals, nearest_city =  city_country[pos], 
+                             geometry_nearest = geometry[pos],
+                             distance_city = dist)
+
+# world map
+world <- ne_countries(scale = 10, returnclass = "sf")
+
+# map
+ggplot(world) +
+   geom_sf(fill = "black", colour = "white") +
+   geom_sf(data = capitals, 
+           aes(size = distance_city),
+           alpha = 0.7,
+           fill = "#bd0026",
+           shape = 21,
+           show.legend = 'point') +
+   coord_sf(crs = "+proj=robin +lon_0=0 +x_0=0 +y_0=0 +ellps=WGS84 +datum=WGS84 +units=m +no_defs") +
+  labs(size = "Distance (km)", title = "Distance to the next capital city") +
+  theme_void()
 ```
 
