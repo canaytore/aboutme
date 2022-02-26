@@ -1,0 +1,143 @@
+---
+title: "Geographic distance"
+date: '2022-02-18'
+permalink: /posts/2022/02/geographic-distance/
+tags:
+- r
+- spatial analysis
+- visualization
+---
+
+hello
+
+```{r message=FALSE, warning=FALSE}
+# load packages
+library(sf) 
+library(tidyverse)
+library(units)
+library(rnaturalearth)
+```
+
+```{r message=FALSE, warning=FALSE}
+tr <- read.csv("assets/turkey_cities.csv")
+head(tr)
+```
+
+```{r message=FALSE, warning=FALSE}
+tr <- tr %>% 
+  filter(capital != "minor") %>%
+  select(city, lng, lat)
+
+cities <- st_as_sf(tr, coords = c("lng", "lat"), crs = 4326)
+
+head(cities)
+```
+
+
+```{r message=FALSE, warning=FALSE}
+# calculate distance
+m_distance <- st_distance(cities)
+
+# matrix
+dim(m_distance)
+```
+
+```{r message=FALSE, warning=FALSE}
+# change m to km
+km_distance <- set_units(m_distance, km)
+
+# replace the distance of 0 m with NA
+km_distance[km_distance == set_units(0, km)] <- NA
+```
+
+
+```{r message=FALSE, warning=FALSE}
+# get the index (position) of the city and the distance
+pos <- apply(km_distance, 1, which.min)
+dist <- apply(km_distance, 1, min, na.rm = TRUE)
+
+# add the distance and get the name of the city
+cities <- mutate(cities, nearest_city =  city[pos], 
+                             geometry_nearest = geometry[pos],
+                             distance_city = dist)
+```
+
+
+```{r message=FALSE, warning=FALSE}
+# world map
+turkey <- ne_countries(scale = 10, returnclass = "sf", country = "Turkey")
+
+# map
+ggplot(turkey) +
+   geom_sf(fill = "blue4", colour = "white") +
+   geom_sf(data = cities, 
+           aes(size = distance_city),
+           alpha = 0.7,
+           fill = "red3",
+           shape = 21,
+           show.legend = 'point'
+           ) +
+   coord_sf(crs = "+proj=robin +lon_0=0 +x_0=0 +y_0=0 +ellps=WGS84 +datum=WGS84 +units=m +no_defs") +
+  labs(size = "Distance (km)", title = "Distance to the next closest city") +
+  theme_void()
+```
+
+```{r message=FALSE, warning=FALSE}
+cities[cities$distance_city == min(cities$distance_city),]
+cities[cities$distance_city == max(cities$distance_city),]
+```
+
+
+# min distance to next capital in World
+
+```{r message=FALSE, warning=FALSE}
+library(maps)
+cities <- st_as_sf(world.cities, coords = c("long", "lat"), crs = 4326)
+cities
+
+# filter the capital cities
+capitals <- filter(cities, capital == 1)
+
+# create a new label combining name and country
+capitals <- mutate(capitals, city_country = str_c(name, " (", country.etc, ")"))
+
+capitals 
+
+# calculate distance
+m_distance <- st_distance(capitals)
+
+# matrix
+dim(m_distance)
+
+# change m to km
+m_distance_km <- set_units(m_distance, km)
+
+# replace the distance of 0 m with NA
+m_distance_km[m_distance_km == set_units(0, km)] <- NA
+
+# get the index (position) of the city and the distance
+pos <- apply(m_distance_km, 1, which.min)
+dist <- apply(m_distance_km, 1, min, na.rm = TRUE)
+
+# add the distance and get the name of the city
+capitals <- mutate(capitals, nearest_city =  city_country[pos], 
+                             geometry_nearest = geometry[pos],
+                             distance_city = dist)
+
+# world map
+world <- ne_countries(scale = 10, returnclass = "sf")
+
+# map
+ggplot(world) +
+   geom_sf(fill = "black", colour = "white") +
+   geom_sf(data = capitals, 
+           aes(size = distance_city),
+           alpha = 0.7,
+           fill = "#bd0026",
+           shape = 21,
+           show.legend = 'point') +
+   coord_sf(crs = "+proj=robin +lon_0=0 +x_0=0 +y_0=0 +ellps=WGS84 +datum=WGS84 +units=m +no_defs") +
+  labs(size = "Distance (km)", title = "Distance to the next capital city") +
+  theme_void()
+```
+
