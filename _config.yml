@@ -49,6 +49,8 @@ atom_feed:
   hide                   : true # feed disable
   path                   : # blank (default) uses feed.xml  
 search                   : true 
+search_full_content      : true # could impact page load performance
+search_provider          : lunr
 
 # SEO Related
 google_site_verification :
